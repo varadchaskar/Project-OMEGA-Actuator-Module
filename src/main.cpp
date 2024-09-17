@@ -1,18 +1,10 @@
-#include <Arduino.h>
-
-// put function declarations here:
-int myFunction(int, int);
+#include <WiFiManager.h> // Include the WiFiManager library, which simplifies connecting to WiFi networks
+#include <ESP8266WiFi.h> // Include the ESP8266 WiFi library for basic WiFi functionality
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(115200); // Initialize serial communication at a baud rate of 115200 for debugging
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
